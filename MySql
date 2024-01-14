@@ -1,0 +1,15 @@
+create database  dbApiUsuarios;
+
+use dbApiUsuarios;
+
+create table usuarios(
+id int primary key auto_increment,
+nome varchar(40),
+data_nasc varchar(8),
+email varchar(40)
+);
+
+insert into usuarios (nome, data_nasc, email) value ('Gustavo Gomes' , '11052000', 'gustavogomes20@gmail.com');
+insert into usuarios (nome, data_nasc, email) value ('Roberto Soares' , '06091993', 'robertosoares93@gmail.com');
+
+select * from usuarios;
